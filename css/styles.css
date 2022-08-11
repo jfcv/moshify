@@ -171,6 +171,10 @@ a {
   fill: var(--color-primary);
 }
 
+.icon--secondary {
+  fill: var(--color-secondary);
+}
+
 .icon-container {
   align-items: center;
   background: #f3f9fa;
@@ -371,3 +375,17 @@ a {
   }
 }
 
+/* Media Component */
+
+.media {
+  margin: 0 1rem;
+  display: flex;
+}
+
+.media__body {
+  margin: 0 2rem;
+}
+
+.media__image {
+  margin-top: 1rem;
+}

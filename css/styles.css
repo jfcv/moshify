@@ -549,3 +549,35 @@ a {
     margin: 0 2rem;
   }
 }
+
+/* Collapsibles */
+
+.collapsible__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.collapsible__heading {
+  font-size: 3rem;
+}
+
+.collapsible__menu {
+  fill: var(--color-accent);
+}
+
+.collapsible__menu:hover {
+  background: var(--color-accent);
+  fill: #fff;
+}
+
+.collapsible__content {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.collapsible--expanded .collapsible__content {
+  max-height: 100vh;
+  opacity: 1;
+}
